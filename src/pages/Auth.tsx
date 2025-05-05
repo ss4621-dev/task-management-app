@@ -26,25 +26,25 @@ const Auth: React.FC = () => {
           </div>
           <h2 className="text-2xl font-bold text-white">Streamlined Task Management</h2>
           <ul className="space-y-4">
-            <li className="flex gap-3 text-sidebar-foreground">
+            <li className="flex gap-3 text-black">
               <svg className="h-6 w-6 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
               <span>Effortlessly create and assign tasks</span>
             </li>
-            <li className="flex gap-3 text-sidebar-foreground">
+            <li className="flex gap-3 text-black">
               <svg className="h-6 w-6 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
               <span>Track progress with real-time updates</span>
             </li>
-            <li className="flex gap-3 text-sidebar-foreground">
+            <li className="flex gap-3 text-black">
               <svg className="h-6 w-6 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
               <span>Collaborate with your team seamlessly</span>
             </li>
-            <li className="flex gap-3 text-sidebar-foreground">
+            <li className="flex gap-3 text-black">
               <svg className="h-6 w-6 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
