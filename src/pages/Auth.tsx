@@ -22,7 +22,7 @@ const Auth: React.FC = () => {
             <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white text-xl font-semibold">
               T
             </div>
-            <h1 className="text-3xl font-bold text-white">TaskFlow</h1>
+            <h1 className="text-3xl font-bold text-black">TaskFlow</h1>
           </div>
           <h2 className="text-2xl font-bold text-white">Streamlined Task Management</h2>
           <ul className="space-y-4">
