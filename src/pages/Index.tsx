@@ -76,11 +76,11 @@ const Dashboard: React.FC = () => {
     : null;
   
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 text-black">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Dashboard</h1>
-          <p className="text-muted-foreground">Welcome back, {user.name}</p>
+          <h1 className="text-3xl font-bold text-black">Dashboard</h1>
+          <p className="text-black">Welcome back, {user.name}</p>
         </div>
         
         <Dialog open={isCreateDialogOpen} onOpenChange={setIsCreateDialogOpen}>
@@ -102,12 +102,12 @@ const Dashboard: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">To Do</CardTitle>
-            <ListTodo className="h-4 w-4 text-muted-foreground" />
+            <CardTitle className="text-sm font-medium text-black">To Do</CardTitle>
+            <ListTodo className="h-4 w-4 text-black" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{todoCount}</div>
-            <p className="text-xs text-muted-foreground">
+            <div className="text-2xl font-bold text-black">{todoCount}</div>
+            <p className="text-xs text-black">
               {todoCount === 1 ? 'task' : 'tasks'} waiting to be started
             </p>
           </CardContent>
@@ -115,12 +115,12 @@ const Dashboard: React.FC = () => {
         
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">In Progress</CardTitle>
-            <Clock className="h-4 w-4 text-muted-foreground" />
+            <CardTitle className="text-sm font-medium text-black">In Progress</CardTitle>
+            <Clock className="h-4 w-4 text-black" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{inProgressCount}</div>
-            <p className="text-xs text-muted-foreground">
+            <div className="text-2xl font-bold text-black">{inProgressCount}</div>
+            <p className="text-xs text-black">
               {inProgressCount === 1 ? 'task' : 'tasks'} currently in progress
             </p>
           </CardContent>
@@ -128,12 +128,12 @@ const Dashboard: React.FC = () => {
         
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">Review</CardTitle>
-            <UserCircle className="h-4 w-4 text-muted-foreground" />
+            <CardTitle className="text-sm font-medium text-black">Review</CardTitle>
+            <UserCircle className="h-4 w-4 text-black" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{reviewCount}</div>
-            <p className="text-xs text-muted-foreground">
+            <div className="text-2xl font-bold text-black">{reviewCount}</div>
+            <p className="text-xs text-black">
               {reviewCount === 1 ? 'task' : 'tasks'} waiting for review
             </p>
           </CardContent>
@@ -141,12 +141,12 @@ const Dashboard: React.FC = () => {
         
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium">Completed</CardTitle>
-            <CheckCircle className="h-4 w-4 text-muted-foreground" />
+            <CardTitle className="text-sm font-medium text-black">Completed</CardTitle>
+            <CheckCircle className="h-4 w-4 text-black" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{completedCount}</div>
-            <p className="text-xs text-muted-foreground">
+            <div className="text-2xl font-bold text-black">{completedCount}</div>
+            <p className="text-xs text-black">
               {completedCount === 1 ? 'task' : 'tasks'} completed
             </p>
           </CardContent>
@@ -156,14 +156,14 @@ const Dashboard: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <h2 className="text-xl font-bold">My Tasks</h2>
+            <h2 className="text-xl font-bold text-black">My Tasks</h2>
             <Badge variant="outline" className="px-3">
               {assignedTasks.length}
             </Badge>
           </div>
           <div className="space-y-4 overflow-auto max-h-96 pr-1">
             {assignedTasks.length === 0 ? (
-              <p className="text-muted-foreground text-center py-8">
+              <p className="text-black text-center py-8">
                 No tasks assigned to you yet
               </p>
             ) : (
@@ -207,7 +207,7 @@ const Dashboard: React.FC = () => {
           </div>
           <div className="space-y-4 overflow-auto max-h-96 pr-1">
             {overdueTasks.length === 0 ? (
-              <p className="text-muted-foreground text-center py-8">
+              <p className="text-black text-center py-8">
                 No overdue tasks. Great job!
               </p>
             ) : (
