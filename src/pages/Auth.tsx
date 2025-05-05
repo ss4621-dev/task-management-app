@@ -59,7 +59,7 @@ const Auth: React.FC = () => {
             <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white text-xl font-semibold">
               T
             </div>
-            <h1 className="text-3xl font-bold">TaskFlow</h1>
+            <h1 className="text-3xl font-bold text-black">TaskFlow</h1>
           </div>
           {showLogin ? (
             <LoginForm onSwitchToRegister={() => setShowLogin(false)} />

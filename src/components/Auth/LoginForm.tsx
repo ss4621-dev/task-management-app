@@ -39,8 +39,8 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSwitchToRegister }) => {
   return (
     <div className="space-y-6">
       <div className="space-y-2 text-center">
-        <h1 className="text-3xl font-bold">Welcome back</h1>
-        <p className="text-muted-foreground">Enter your credentials to sign in to your account</p>
+        <h1 className="text-3xl font-bold text-black">Welcome back</h1>
+        <p className="text-black">Enter your credentials to sign in to your account</p>
       </div>
 
       <Form {...form}>
@@ -57,7 +57,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSwitchToRegister }) => {
             }}
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel className="text-black">Email</FormLabel>
                 <FormControl>
                   <Input placeholder="your.email@example.com" {...field} />
                 </FormControl>
@@ -72,7 +72,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSwitchToRegister }) => {
             rules={{ required: 'Password is required' }}
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Password</FormLabel>
+                <FormLabel className="text-black">Password</FormLabel>
                 <FormControl>
                   <Input type="password" placeholder="••••••••" {...field} />
                 </FormControl>
@@ -88,19 +88,19 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSwitchToRegister }) => {
       </Form>
 
       <div className="text-center text-sm">
-        <p>
+        <p className="text-black">
           Don't have an account?{' '}
-          <Button variant="link" className="p-0 h-auto" onClick={onSwitchToRegister}>
+          <Button variant="link" className="p-0 h-auto text-primary" onClick={onSwitchToRegister}>
             Sign up
           </Button>
         </p>
       </div>
 
       <div className="mt-6 border-t pt-4">
-        <p className="text-sm text-muted-foreground text-center">
+        <p className="text-sm text-black text-center">
           For demo purposes, use any of the following emails with password "password":
         </p>
-        <ul className="text-sm text-muted-foreground mt-2 space-y-1">
+        <ul className="text-sm text-black mt-2 space-y-1">
           <li className="text-center">admin@example.com</li>
           <li className="text-center">manager@example.com</li>
           <li className="text-center">user@example.com</li>
